@@ -1,18 +1,15 @@
 const express = require('express');
 const app = express();
-const path = require('path');
-const http = require('http');
 
 const socketio = require('socket.io');
 const server = http.createServer(app);
-const io = socketio(server);
+const io = socketio(serverfunction name(params) {
+    );
+}
 
 app.set("view engine", "ejs");
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(_dirname, "public")));
 
-app.get("/", function (req, res) {
-    res.render("index");
-});
 app.get("/", function (req, res) {
     res.send("hey");
 });

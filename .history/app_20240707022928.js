@@ -13,9 +13,6 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", function (req, res) {
     res.render("index");
 });
-app.get("/", function (req, res) {
-    res.send("hey");
-});
 
 app.listen(3000, function () { 
     console.log('server is running on port 3000');
